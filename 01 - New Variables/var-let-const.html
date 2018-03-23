@@ -8,24 +8,22 @@
 <script>
   function setWidth() {
     var width = 100;
-    console.log(width);
+    console.log('var width scoped to function: local variable', width);
   }
   setWidth();
-
+  // console.log('var width from outside the function trigger an error', width);
   var age = 100;
+
   if(age > 12) {
-    const dogYears = age * 7;
-    console.log(`You are ${dogYears} dog years old!`);
+    let dogYears = age * 7;
+    console.log('const dogYears inside the statement:', `You are ${dogYears} dog years old!`);
   }
+
+  // console.log('const ${dogYears} outside the statement trigger an error', dogYears);
 
   let height = 200;
   const key = 'abc123';
+  console.log('key', key)
 </script>
 </body>
 </html>
-
-
-<!-- 
-****comments/resume****
-1- var variables are function scoped (variable locale) and can be updated or redefined
--->

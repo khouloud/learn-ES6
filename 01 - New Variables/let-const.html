@@ -5,18 +5,20 @@
   <title>let and const</title>
 </head>
 <body>
+<h1>If you are a cool person check out the DOM!</h1>
 <script>
   const key = 'abc123';
   let points = 50;
   let winner = false;
-
-  const person = {
+  console.log('points', points);
+  points = 10;
+  console.log('points updated to:', points);
+  person = {
     name: 'Wes',
     age: 28
   }
-
   const wes = Object.freeze(person);
-
+  //object.freeze is to not allow modification to the object
 </script>
 </body>
 </html>
