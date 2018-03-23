@@ -1,0 +1,8 @@
+Comments / resume (var, let and const)
+
+1. var variables are function scoped (variable locale) and can be updated or redefined
+2. let and const variables are scoped to the block statement {...}
+3. const variables cannot be updated versus let variables can be updated by simply reassign the variable without putting let before
+4. const on a object works differently you cannot assign new attributes to the object but you can change their value!
+
+Const VS let and var in the JS community
